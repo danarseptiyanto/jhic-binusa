@@ -1,6 +1,3 @@
-// src/components/KeunggulanSekolah.jsx
-// Diperbarui pada: 22 Juli 2026
-
 import React from 'react';
 
 const KeunggulanSekolah = () => {
@@ -46,11 +43,9 @@ const KeunggulanSekolah = () => {
   return (
     <section className="w-full bg-blue-600 font-sans py-16 md:py-24">
       <div className="max-w-[1280px] mx-auto px-5">
-        
         <h2 className="text-white text-[29px] font-semibold leading-[1.29] tracking-normal mb-12 w-full md:max-w-[477px]">
           SMK Bina Nusantara hadir dengan berbagai keunggulan
         </h2>
-        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {keunggulanData.map((item) => (
             <div 
