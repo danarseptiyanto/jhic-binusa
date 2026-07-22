@@ -3,6 +3,8 @@ import Navbar from "./components/NavbarSekolah";
 import ProfilSekolah from "./components/ProfilSekolah";
 import KerjasamaSekolah from "./components/KerjasamaSekolah";
 import KeunggulanSekolah from "./components/KeunggulanSekolah";
+import HeroSection from "./components/Hero";
+import HeroBackground from "./components/HeroBackground";
 
 function App() {
 	return (
@@ -10,6 +12,7 @@ function App() {
 			<Navbar />
 
 			<main className="pt-24">
+				<HeroSection />
 				<ProfilSekolah />
 				<KerjasamaSekolah />
 				<KeunggulanSekolah />
