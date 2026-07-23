@@ -1,4 +1,5 @@
 import React from 'react';
+import bgKeunggulan from '../assets/bg-keunggulan-sekolah.jpg';
 
 const KeunggulanSekolah = () => {
   const keunggulanData = [
@@ -41,19 +42,25 @@ const KeunggulanSekolah = () => {
   ];
 
   return (
-    <section className="w-full bg-blue-600 font-sans py-16 md:py-24">
-      <div className="max-w-[1280px] mx-auto px-5">
+    <section className="relative w-full bg-blue-600 font-sans py-16 md:py-24 overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-45 mix-blend-screen invert"
+        style={{ backgroundImage: `url(${bgKeunggulan})` }}
+      />
+
+      <div className="relative z-10 max-w-[1280px] mx-auto px-5">
         <h2 className="text-white text-[29px] font-semibold leading-[1.29] tracking-normal mb-12 w-full md:max-w-[477px]">
           SMK Bina Nusantara hadir dengan berbagai keunggulan
         </h2>
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {keunggulanData.map((item) => (
             <div 
               key={item.id}
-              className={`p-6 rounded-[15px] transition-transform duration-300 hover:scale-105 flex flex-col h-[246px] shadow-md ${
+              className={`p-6 rounded-[15px] transition-transform duration-300 hover:scale-105 flex flex-col h-[246px] shadow-[0_5px_8px_3px_rgba(0,0,0,0.03)] ${
                 item.isActive 
-                  ? 'bg-blue-200 text-gray-900' 
-                  : 'bg-blue-800 text-white' 
+                  ? 'bg-blue-200' 
+                  : 'bg-blue-800' 
               }`}
             >
               <span className={`text-[64px] font-bold leading-[0.95] tracking-normal mb-4 inline-block bg-clip-text text-transparent ${
@@ -78,7 +85,6 @@ const KeunggulanSekolah = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
