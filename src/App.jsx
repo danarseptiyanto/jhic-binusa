@@ -5,6 +5,7 @@ import KerjasamaSekolah from "./components/KerjasamaSekolah";
 import KeunggulanSekolah from "./components/KeunggulanSekolah";
 import HeroSection from "./components/Hero";
 import HeroBackground from "./components/HeroBackground";
+import JurusanSekolah from "./components/JurusanSekolah";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 				<ProfilSekolah />
 				<KerjasamaSekolah />
 				<KeunggulanSekolah />
+				<JurusanSekolah />
 			</main>
 		</div>
 	);
