@@ -6,6 +6,9 @@ import KeunggulanSekolah from "./components/KeunggulanSekolah";
 import HeroSection from "./components/Hero";
 import HeroBackground from "./components/HeroBackground";
 import JurusanSekolah from "./components/JurusanSekolah";
+import LulusanTerbaik from "./components/LulusanTerbaik";
+import PrestasiTerkini from "./components/PrestasiTerkini";
+import FaqSection from "./components/Faq";
 
 function App() {
 	return (
@@ -18,6 +21,9 @@ function App() {
 				<KerjasamaSekolah />
 				<KeunggulanSekolah />
 				<JurusanSekolah />
+				<LulusanTerbaik />
+				<PrestasiTerkini />
+				<FaqSection />
 			</main>
 		</div>
 	);
