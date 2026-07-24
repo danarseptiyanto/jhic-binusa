@@ -1,17 +1,26 @@
 import React from "react";
 
 const logos = [
-  "/src/assets/logo_kerjasama/image ahm.png",
-  "/src/assets/logo_kerjasama/image aoi.png",
-  "/src/assets/logo_kerjasama/image ex.png",
-  "/src/assets/logo_kerjasama/image intel.png",
-  "/src/assets/logo_kerjasama/image 02.png",
-  "/src/assets/logo_kerjasama/image alfa.png",
+  "/src/assets/logo_kerjasama/Logo-AHM.jpg",
+  "/src/assets/logo_kerjasama/Logo-ApparelOne.jpg",
+  "/src/assets/logo_kerjasama/Logo-Excellent.jpg",
+  "/src/assets/logo_kerjasama/Logo-intel.jpg",
+  "/src/assets/logo_kerjasama/Logo-G2academy.jpg",
+  "/src/assets/logo_kerjasama/Logo-alfamart.jpg",
 ];
 
 function ProfilSekolah() {
+  const extendedLogos = [...logos, ...logos];
+
   return (
     <section className="max-w-[1280px] mx-auto py-8 sm:py-12 md:py-16 px-4 sm:px-6 font-sans overflow-hidden">
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
+
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 mb-6 lg:mb-8 items-center">
         <div className="lg:col-span-5">
           <h2 className="text-[24px] sm:text-[28px] font-medium tracking-[-0.03em] text-gray-900 w-full">
@@ -87,14 +96,15 @@ function ProfilSekolah() {
           </div>
         </div>
       </div>
-      <div className="border-t border-gray-200 mt-12 sm:mt-16 pt-8 sm:pt-10">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 items-center">
-          {logos.map((logo, index) => (
-            <div key={index} className="flex justify-center items-center">
+      
+      <div className="border-t border-gray-200 mt-12 sm:mt-16 pt-8 sm:pt-10 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
+        <div className="flex animate-[marquee_20s_linear_infinite] hover:[animation-play-state:paused] w-max gap-12 sm:gap-20">
+          {extendedLogos.map((logo, index) => (
+            <div key={index} className="flex-shrink-0 flex justify-center items-center">
               <img
                 src={logo}
                 alt="logo"
-                className="h-7 sm:h-10 object-contain opacity-50 hover:opacity-100 transition"
+                className="h-10 sm:h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
               />
             </div>
           ))}
