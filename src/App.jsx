@@ -13,9 +13,9 @@ import FaqSection from "./components/Faq";
 function App() {
 	return (
 		<div className="relative overflow-x-hidden">
-			<Navbar />
+			{/* <Navbar />*/}
 
-			<main className="pt-24">
+			<main>
 				<HeroSection />
 				<ProfilSekolah />
 				<KerjasamaSekolah />
