@@ -1,7 +1,7 @@
 import React from "react";
-import SinkronisasiKurikulum from "../assets/Sinkronisasi_Kurikulum.jpg";
-import ProgramPrakerja from "../assets/Program_Prakerja.png";
-import PenyaluranLulusan from "../assets/Penyaluran_Lulusan.jpg";
+import SinkronisasiKurikulum from "../assets/kerjasama_sekolah/Sinkronisasi_Kurikulum.jpg";
+import ProgramPrakerja from "../assets/kerjasama_sekolah/Program_Prakerja.png";
+import PenyaluranLulusan from "../assets/kerjasama_sekolah/Penyaluran_Lulusan.jpg";
 import {
 	RiBookAiFill,
 	RiBriefcase5Fill,

@@ -1,12 +1,12 @@
 import React from 'react';
-import tkj1 from '../assets/jurusan_tkj1.jpg';
-import tkj2 from '../assets/jurusan_tkj2.jpg';
-import tsm1 from '../assets/jurusan_tsm1.jpg';
-import tsm2 from '../assets/jurusan_tsm2.jpg';
-import tb1 from '../assets/jurusan_tb1.jpg';
-import tb2 from '../assets/jurusan_tb2.jpg';
-import akl1 from '../assets/jurusan_akl1.jpg';
-import akl2 from '../assets/jurusan_akl2.jpg';
+import tkj1 from '../assets/jurusan_sekolah/tkj/jurusan_tkj1.jpg';
+import tkj2 from '../assets/jurusan_sekolah/tkj/jurusan_tkj2.jpg';
+import tsm1 from '../assets/jurusan_sekolah/tsm/jurusan_tsm1.jpg';
+import tsm2 from '../assets/jurusan_sekolah/tsm/jurusan_tsm2.jpg';
+import tb1 from '../assets/jurusan_sekolah/tb/jurusan_tb1.jpg';
+import tb2 from '../assets/jurusan_sekolah/tb/jurusan_tb2.jpg';
+import akl1 from '../assets/jurusan_sekolah/akl/jurusan_akl1.jpg';
+import akl2 from '../assets/jurusan_sekolah/akl/jurusan_akl2.jpg';
 import { RiMacbookLine, RiSettingsLine, RiScissorsCutFill, RiCalculatorLine } from '@remixicon/react';
 
 const JurusanSekolah = () => {
