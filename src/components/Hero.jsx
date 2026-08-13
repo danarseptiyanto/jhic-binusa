@@ -1,5 +1,9 @@
 // import HeroBackground from "./HeroBackground";
 import Navbar from "./NavbarSekolah";
+import heroSvg from "../assets/hero.svg";
+import heroMobileLine from "../assets/hero-mobile-line.svg";
+import heroMobile from "../assets/hero-mobile.svg";
+import iconSiswa from "../assets/icon-siswa.svg";
 //
 
 function HeroSection() {
@@ -7,19 +11,19 @@ function HeroSection() {
 		<>
 			<div className="absolute top-0 right-0 left-0 h-[823px] overflow-hidden border-b-zinc-200 md:border-b-2">
 				<img
-					src="/src/assets/hero.svg"
+					src={heroSvg}
 					className="absolute top-1/2 left-1/2 hidden h-full w-auto max-w-none -translate-x-1/2 -translate-y-1/2 md:block"
 				/>
 			</div>
 			<img
-				src="/src/assets/hero-mobile-line.svg"
+				src={heroMobileLine}
 				className="absolute top-1 block w-auto md:hidden"
 			/>
 			<section className="relative flex flex-col items-center overflow-hidden pb-16 text-center">
 				{/* <HeroBackground />*/}
 				<Navbar />
 				<img
-					src="/src/assets/hero-mobile.svg"
+					src={heroMobile}
 					className="block px-5 pt-20 md:hidden"
 					alt=""
 				/>
@@ -46,7 +50,7 @@ function HeroSection() {
 						SPMB 2027
 					</button>
 					<img
-						src="/src/assets/icon-siswa.svg"
+						src={iconSiswa}
 						className="-mt-5 block px-5 md:hidden"
 						alt=""
 					/>

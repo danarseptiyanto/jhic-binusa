@@ -1,12 +1,20 @@
 import React from "react";
 
+import logoAHM from "../assets/logo_kerjasama/Logo-AHM.jpg";
+import logoApparelOne from "../assets/logo_kerjasama/Logo-ApparelOne.jpg";
+import logoExcellent from "../assets/logo_kerjasama/Logo-Excellent.jpg";
+import logoIntel from "../assets/logo_kerjasama/Logo-intel.jpg";
+import logoG2academy from "../assets/logo_kerjasama/Logo-G2academy.jpg";
+import logoAlfamart from "../assets/logo_kerjasama/Logo-alfamart.jpg";
+import prestasi1 from "../assets/prestasi/prestasi1.png";
+
 const logos = [
-  "/src/assets/logo_kerjasama/Logo-AHM.jpg",
-  "/src/assets/logo_kerjasama/Logo-ApparelOne.jpg",
-  "/src/assets/logo_kerjasama/Logo-Excellent.jpg",
-  "/src/assets/logo_kerjasama/Logo-intel.jpg",
-  "/src/assets/logo_kerjasama/Logo-G2academy.jpg",
-  "/src/assets/logo_kerjasama/Logo-alfamart.jpg",
+  logoAHM,
+  logoApparelOne,
+  logoExcellent,
+  logoIntel,
+  logoG2academy,
+  logoAlfamart,
 ];
 
 function ProfilSekolah() {
@@ -46,17 +54,17 @@ function ProfilSekolah() {
             </div>
             <div className="flex justify-center items-start relative w-full h-[170px] sm:h-[190px]">
               <img
-                src="/src/assets/prestasi/prestasi1.png"
+                src={prestasi1}
                 alt=""
                 className="absolute top-0 left-1/2 -translate-x-1/2 w-[150px] sm:w-[175px] h-[85px] sm:h-[98px] object-cover rounded-[20px] sm:rounded-[28px] opacity-15"
               />
               <img
-                src="/src/assets/prestasi/prestasi1.png"
+                src={prestasi1}
                 alt=""
                 className="absolute top-3 sm:top-4 left-1/2 -translate-x-1/2 w-[190px] sm:w-[221px] h-[105px] sm:h-[125px] object-cover rounded-[20px] sm:rounded-[28px] opacity-30"
               />
               <img
-                src="/src/assets/prestasi/prestasi1.png"
+                src={prestasi1}
                 alt=""
                 className="absolute top-6 sm:top-8 left-1/2 -translate-x-1/2 w-[230px] sm:w-[273px] h-[130px] sm:h-[153px] object-cover rounded-[20px] sm:rounded-[28px] shadow-lg"
               />
